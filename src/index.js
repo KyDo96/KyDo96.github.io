@@ -11,6 +11,11 @@ import {createStore,applyMiddleware,compose} from 'redux'
 import {Provider} from 'react-redux'
 import thunk from 'redux-thunk'
 import rootReducer from './redux'
+import {Parse} from 'parse'
+
+Parse.initialize("aIrqBP98E84a24X1mwk602W5CgnqqIvxhXFqH07f","VGaaAFqdLS8gKXAgxmZa6c8mdhVuGTkRF95cEkkM"); 
+Parse.serverURL = 'https://parseapi.back4app.com/'
+
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store=createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)))

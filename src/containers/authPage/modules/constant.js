@@ -1,0 +1,3 @@
+export const AUTH_PAGE_REQUEST='authPage/AUTH_PAGE_REQUEST';
+export const AUTH_PAGE_SUCCESS='authPage/AUTH_PAGE_SUCCESS';
+export const AUTH_PAGE_FAILED='authPage/AUTH_PAGE_FAILED';
